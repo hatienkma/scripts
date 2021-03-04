@@ -11,3 +11,6 @@ grep 'warning\|error\|critical' /var/log/messages
 3. Exclude keywork: 
 
 grep -v 'abc' /var/log/messages
+
+4. Sort with Cut. 
+cat xx.txt | cut -d " " -f 5 | sort -rn | uniq -c | sort -rn > xxx.txt
