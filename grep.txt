@@ -1,0 +1,13 @@
+Filter dùng grep.
+
+1. Match keyword: 
+
+grep -w 'warning\|error\|critical' /var/log/messages
+
+2. Contain keywork:
+
+grep 'warning\|error\|critical' /var/log/messages
+
+3. Exclude keywork: 
+
+grep -v 'abc' /var/log/messages
